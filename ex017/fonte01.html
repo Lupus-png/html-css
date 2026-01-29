@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px é o tamanho padrão de fonte
+            16px geralmente = 1em
+
+            use px ou em, por recomendação
+            */
+            font-size: 1em;       /*tamanho da fonte*/
+            font-weight: normal;     /*peso da fonte*/
+            /* lighter normal bold bolder */
+            font-style: italic;    /*italico ou normal*/
+            text-decoration: underline;   /*sublinhado*/
+        }
+
+        h1 {
+            font: italic normal 3em arial, sans-serif;
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae omnis optio corporis eligendi officia nihil sit vero odio pariatur eos, ipsum magnam ipsam iusto maiores nam. Tempore incidunt vel unde Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque eaque quidem placeat repellendus sequi quam amet modi esse! Fugiat aspernatur, corrupti reiciendis illo unde voluptas molestias quidem quas officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae provident alias quos eveniet neque beatae quia corporis sint asperiores quae dolorum totam possimus reiciendis, aut ullam, nostrum iure minus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis corrupti delectus, ea minus ullam quia sequi eaque tenetur commodi? Inventore veritatis voluptates iusto necessitatibus sint odio ipsum, reiciendis sequi.</p>
+    <h2>Sub-titulo do Exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore accusamus doloremque numquam a mollitia tempora eveniet iste ea ullam nobis! Dolorem repudiandae aliquam tempora? Molestiae reiciendis expedita soluta ab libero.</p>
+</body>
+</html>
