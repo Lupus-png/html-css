@@ -17,10 +17,9 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: var(--fonte2);
-    font-weight: lighter;
 }
 
-header{
+header {
     background-color: black;
     color: white;
     text-align: center;
@@ -29,16 +28,12 @@ header{
 header h1 {
     padding-top: 50px;
     font-family: var(--fonte3);
-    font-size: 8em;
+    font-variant: small-caps;
+    font-size: 10vw;
     margin: 0px auto;
 }
 
-header h1::first-letter {
-    font-size: 1.5em;
-}
-
 header p {
-    font-size: 16px;
     padding-bottom: 50px;
     margin: 0px;
 }
@@ -59,8 +54,11 @@ article {
 }
 
 article.imagem {
-    background-attachment: fixed;
     color: white;
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+    box-shadow: inset 5px 5px 20px black;
 }
 
 article#img1 {
@@ -72,12 +70,11 @@ article#img2 {
 }
 
 article p {
-    width: 50%;
-    padding: 0px 15px;
+    padding-left: 20px;
     margin: 100px 30px;
-    line-height: 2em;
-    font-size: 4em;
     font-family: var(--fonte1);
+    font-size: 3.7vw;
+    line-height: 2em;
 }
 
 article.imagem p {
