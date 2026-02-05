@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid vitae modi quaerat sapiente beatae in accusamus fugit officia quia, perferendis aut, natus debitis obcaecati voluptates consectetur ducimus maiores dolore!</p>
+
+    <ul>
+        <li><a href="/ex022/fundo006.html" target="frame">Priemira Pagina</a></li>   <!--target(nome) é o nome escolhido no iframe, para chamar essa pagina com esse link-->
+        <li><a href="/Desafios/d008/index.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="/Desafios/d010/index.html" target="frame">Terceira Pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit delectus sit quia illo tempora deserunt provident ullam aspernatur sunt eaque! Neque fuga magni illo architecto itaque, sunt harum sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod iure esse commodi aliquam reprehenderit tempora vel excepturi, magnam, odit iusto eveniet cum ex non et labore cumque inventore minus.</p>
+
+    <iframe src="" id="tela" name="frame" srcdoc="<h1>teste de srcdoc</h1><p>achoq que esta funcionando</p>">  <!-- o "nome" é tipo uma tag de id, para chamar apertando em cada link -->        <!-- srcdoc é pra poder criar codigo dentro da tag de caminho -->
+        Infelizmente Seu navegador não é compatível com isso.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit delectus sit quia illo tempora deserunt provident ullam aspernatur sunt eaque! Neque fuga magni illo architecto itaque, sunt harum sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod iure esse commodi aliquam reprehenderit tempora vel excepturi, magnam, odit iusto eveniet cum ex non et labore cumque inventore minus.</p>
+</body>
+</html>
