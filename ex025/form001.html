@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!-- label relaciona o formulario ao elemento (nesse caso, a caixa de texto) usando o nome no ID -->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>  <!-- O input cria uma coleta de informção do usuario, com o formulario -->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>  <!-- O type é o tipo de caixa//name é para referencia do HTML e do PHP// id é para referencia do label e do javascript -->
+        <p><input type="submit" value="Enviar"></p>  <!-- Cria um botão // value é o texto no botão -->
+    </form>
+</body>
+</html>
