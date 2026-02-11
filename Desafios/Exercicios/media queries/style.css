@@ -11,7 +11,7 @@ body,html {
 }
 
 header {
-    background-color: darkgray;
+    background-color: rgb(148, 148, 148);
 }
 
 h1 {
@@ -19,7 +19,42 @@ h1 {
     padding: 10px;
 }
 
+span {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+span:hover {
+    background-color: white;
+    color: black
+}
+
 nav {
+    display: none;
+    background-color: rgb(87, 87, 87);
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: lightgrey;
+}
+
+/* nav {
     padding: 10px 0px;
 }
 
@@ -27,12 +62,12 @@ a {
     background-color: gray;
     color: white;
     padding: 10px;
-
+    text-decoration: none;
 }
 
 li {
     display: inline-block;
-}
+} */
 
 article {
     background-color: white;
