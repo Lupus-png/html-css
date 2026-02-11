@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    padding: 10px 0px;
+}
+
+a {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+
+}
+
+li {
+    display: inline-block;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+article > p {
+    margin: 30px 0px;
+    font-size: 1.1em;
+    text-indent: 2em;
+    text-align: justify;
+}
