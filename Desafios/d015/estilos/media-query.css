@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #ffc4eb;
+    --cor2: #FFE4FA;
+    --cor3: #fa7ef0;
+    --cor4: #fff7d8de;
+    --cor5: #ABC798;
+}
+
+@media screen and (min-width:768px) and (max-width:993px) { /* Tablet */
+    body {
+        background-image: linear-gradient(to bottom, #ffc4eb, #abc798);
+    }
+
+    section {
+        width: 90%;
+        height: 300px;
+    }
+
+    section > h1 {
+        margin-left: 250px;
+    }
+
+    section > p {
+        margin-left: 260px;
+    }
+
+    #imagem {
+        background-image: url(../imagens/woman-lying-down.jpg);
+        border-radius: 20px 0px 0px 20px;
+        float: left;
+        height: 300px;
+        width: 250px;
+    }
+
+}
+
+@media screen and (min-width:994px) { /* Telas grandes */
+
+}

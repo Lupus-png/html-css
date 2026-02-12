@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #ffc4eb;
+    --cor2: #FFE4FA;
+    --cor3: #fa7ef0;
+    --cor4: #fff7d8de;
+    --cor5: #ABC798;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor1);
+}
+
+section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    border-radius: 20px;
+}
+
+section > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+section > p {
+    margin: 0px 10px;
+    font-size: 13px;
+}
+
+#imagem {
+    background-image: url(../imagens/woman-flower.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#formulario {
+    padding: 7px 10px;
+    text-align: right;
+}
+
+form > p {
+    background-color: var(--cor3);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    color: white ;
+}
+
+.campo {
+    background-color: var(--cor4);
+    height: 30px;
+    margin: 2px;
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+}
+
+.campo:focus {
+    background-color: white;
+}
+
+#entrar {
+    background-color: var(--cor5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 40px;
+    margin: 4px 0px;
+}
+
+#entrar:hover {
+    background-color: #83af65;
+}
+    
+a {
+    display: block;
+    padding: 10px;
+    color: #83af65;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--cor5);
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #cff1b8a8;
+}
