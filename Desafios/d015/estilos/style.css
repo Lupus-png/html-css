@@ -12,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,59 +27,61 @@ section {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
     background-color: white;
     width: 250px;
     height: 520px;
     border-radius: 20px;
-}
-
-section > h1 {
-    text-align: center;
-    padding: 10px;
-}
-
-section > p {
-    margin: 0px 10px;
-    font-size: 13px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    overflow: hidden;
 }
 
 #imagem {
+    display: block;
     background-image: url(../imagens/woman-flower.jpg);
     background-position: center center;
     background-size: cover;
     width: 250px;
     height: 200px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 #formulario {
-    padding: 7px 10px;
-    text-align: right;
+    display: block;
+    padding: 10px;
+}
+
+form > h1 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 form > p {
-    background-color: var(--cor3);
-    margin: 5px 0px;
+    font-size: 13px;
+    padding-bottom: 5px;
     border-radius: 5px;
 }
 
-.material-symbols-outlined {
-    position: relative;
-    top: 5px;
-    left: -10px;
-    color: white ;
+.fundo {
+    background-color: #fa7ef0;
+    margin-bottom: 5px;
 }
 
 .campo {
-    background-color: var(--cor4);
     height: 30px;
-    margin: 2px;
+    background-color: var(--cor4);
     border: 1px solid var(--cor2);
     border-radius: 5px;
 }
 
 .campo:focus {
     background-color: white;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 5px;
+    color: white ;
+    padding: 4px;
 }
 
 #entrar {
@@ -88,13 +91,13 @@ form > p {
     border-radius: 5px;
     width: 230px;
     height: 40px;
-    margin: 4px 0px;
+    margin-bottom: 5px;
 }
 
 #entrar:hover {
     background-color: #83af65;
 }
-    
+
 a {
     display: block;
     padding: 10px;
@@ -107,4 +110,11 @@ a {
 
 a:hover {
     background-color: #cff1b8a8;
+}
+
+#mail {
+    position: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #83af65;
 }

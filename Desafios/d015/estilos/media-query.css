@@ -18,24 +18,72 @@
         height: 300px;
     }
 
-    section > h1 {
-        margin-left: 250px;
+    #imagem {
+        background-image: url(../imagens/woman-dancing.jpg);
+        float: left;
+        height: 100%;
+        width: 40%;
     }
 
-    section > p {
-        margin-left: 260px;
+    #formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    .campo {
+        width: 90%;
+    }
+
+    #entrar {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:994px) { /* Telas grandes */
+    body {
+        background-image: linear-gradient(to bottom, #ffc4eb, #abc798);
+    }
+
+    section {
+        max-width: 1200px;
+        width: 90%;
+        height: 400px;
     }
 
     #imagem {
         background-image: url(../imagens/woman-lying-down.jpg);
-        border-radius: 20px 0px 0px 20px;
-        float: left;
-        height: 300px;
-        width: 250px;
+        float: right;
+        height: 100%;
+        width: 50%;
     }
 
+    #formulario {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    form > h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
 }
+    
+    form > p {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
 
-@media screen and (min-width:994px) { /* Telas grandes */
+    .campo {
+        width: 91%;
+    }
 
+    .fundo {
+        margin-bottom: 7px;
+    }
+
+    #entrar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
