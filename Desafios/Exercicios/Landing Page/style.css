@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+header {
+    background-color: #e2e2e2;
+    color: #24273A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav > a {
+    color: #24273A;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav > a:hover {
+    background-color: #4d7493;
+    color: white;
+    transition: 0.3s;
+}

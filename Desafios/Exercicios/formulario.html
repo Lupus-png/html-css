@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(karola-g.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px; /* evita grudar nas bordas no celular */
+}
+
+section {
+    width: 100%;
+    max-width: 400px; /* largura máxima no desktop */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espaçamento moderno */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+    background-color: rgba(250, 235, 215, 0.596)
+}
+
+#botao {
+    background-color: burlywood;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#botao:hover {
+    background-color: rgb(197, 155, 101);
+}
+    </style>
+</head>
+<body>
+    <section>
+        <form action="#" method="post" autocomplete="on">
+            <label for="inome">Nome <input type="text" name="nome" id="inome" required maxlength="100"></label>
+            <label for="iemail">Email <input type="email" name="email" id="iemail" required minlength="10" maxlength="50"></label>
+            <label for="isenha">Senha <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20"></label>
+            <input type="submit" value="Enviar" id="botao">
+        </form>
+    </section>
+</body>
+</html>

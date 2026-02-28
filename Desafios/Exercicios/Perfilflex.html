@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Simples Flexbox</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: linear-gradient(45deg, #d2cbdd, #eeeeee);
+            padding: 10px;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#perfil {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #efe7fb;
+            color: #2e347f;
+            width: 350px;
+            height: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px #2e337f70;
+            text-align: center;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding: 10px 0px;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px #2e337f70;
+            margin-bottom: 10px;
+        }
+
+        a {
+            background-color:#754571;
+            color: #fbfafb;
+            width: 60%;
+            padding: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            background-color: #b33ea7;
+        }
+    </style>
+</head>
+<body>
+    <div id="perfil">
+        <h1>Perfil Simples</h1>
+        <img src="Killua.jpg" alt="">
+        <h2>Igor do Vale</h2>
+        <p>Este é só um perfil simples para eu treinar Flexbox, exercicios simples, mas é bom pra nao perder a pratica :P</p>
+        <a href="#">Seguir</a>
+    </div>
+</body>
+</html>
