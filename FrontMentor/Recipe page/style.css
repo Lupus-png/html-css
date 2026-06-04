@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: young-serif;
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: outfit;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family:outfit, sans-serif ;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+main {
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 0px 30px;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: young-serif, serif;
+    font-weight: lighter;
+    color: hsl(24, 5%, 18%);
+}
+
+p {
+    margin-top: 20px;
+}
+
+#time {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+#time > h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+ul, ol {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  margin: 24px 0;
+}
+
+li {
+    padding: 5px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: young-serif, serif;
+    font-weight: lighter;
+    font-size: 1.7em;
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.info {
+    font-weight: bolder;
+    color: hsl(14, 45%, 36%);
+}
+
+@media (min-width: 375px) {
+    body {
+        min-height: 100vh;
+        background-color: antiquewhite;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0px;
+    }
+
+    main {
+        background-color: white;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
